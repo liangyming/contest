@@ -24,3 +24,7 @@ for i = 1:708
     an = [an, a];
 end
 disp(mean(an));
+%解微分方程
+%T = [173, 198, 230, 257, 25];
+temp = a/w;
+fun = inline('temp*(173-y)', 'x', 'y')
