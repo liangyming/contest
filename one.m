@@ -33,4 +33,26 @@ fun3 = inline('0.0102*(230-y)', 'x', 'y');
 fun4 = inline('0.0102*(257-y)', 'x', 'y');
 fun5 = inline('0.0102*(173-y)', 'x', 'y');
 %t时间区间,435.5*60 / 78 = 335 s;
-[x1, y1] = ode23(fun1, [0, 335], 25);
+[x1, y1] = ode23(fun1, [0:0.5:335], 25);
+[x2, y2] = ode23(fun2, [0:0.5:335], 25);
+[x3, y3] = ode23(fun3, [0:0.5:335], 25);
+[x4, y4] = ode23(fun4, [0:0.5:335], 25);
+[x5, y5] = ode23(fun5, [0:0.5:335], 25);
+%整合
+time = [0:0.5:335];
+res = [];
+index = 1;
+for t = 0.5:0.5:335
+    if t*78 < (35.5*5 - 2.5 + 25)
+        res = [res, y1(index)];
+    elseif t*78 < (35.5*6 - 2.5 + 25)
+        res = [res, y2(index)];
+    elseif t*78 < (35.5*7 - 2.5 + 25)
+        res = [res, y3(index)];
+    elseif t*78 < (35.5*9 - 2.5 + 25)
+        res = [res, y4(index)];
+    else
+        res = [res, y5(index)];
+    end
+    index = index + 1;
+end
