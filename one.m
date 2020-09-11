@@ -26,5 +26,11 @@ end
 disp(mean(an));
 %解微分方程
 %T = [173, 198, 230, 257, 25];
-temp = a/w;
-fun = inline('temp*(173-y)', 'x', 'y')
+%temp = a/w; temp = 0.0102
+fun1 = inline('0.0102*(173-y)', 'x', 'y');
+fun2 = inline('0.0102*(198-y)', 'x', 'y');
+fun3 = inline('0.0102*(230-y)', 'x', 'y');
+fun4 = inline('0.0102*(257-y)', 'x', 'y');
+fun5 = inline('0.0102*(173-y)', 'x', 'y');
+%t时间区间,435.5*60 / 78 = 335 s;
+[x1, y1] = ode23(fun1, [0, 335], 25);
