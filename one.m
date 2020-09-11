@@ -1,4 +1,6 @@
 %第一题
+clc;
+clear;
 data = xlsread("fujian.xlsx");
 w = 0.015
 v = 70;
@@ -31,7 +33,7 @@ fun1 = inline('0.0102*(173-y)', 'x', 'y');
 fun2 = inline('0.0102*(198-y)', 'x', 'y');
 fun3 = inline('0.0102*(230-y)', 'x', 'y');
 fun4 = inline('0.0102*(257-y)', 'x', 'y');
-fun5 = inline('0.0102*(173-y)', 'x', 'y');
+fun5 = inline('0.0102*(25-y)', 'x', 'y');
 %t时间区间,435.5*60 / 78 = 335 s;
 [x1, y1] = ode23(fun1, [0:0.5:335], 25);
 [x2, y2] = ode23(fun2, [0:0.5:335], 25);
@@ -52,7 +54,10 @@ for t = 0.5:0.5:335
     elseif t*78 < (35.5*9 - 2.5 + 25)
         res = [res, y4(index)];
     else
+
         res = [res, y5(index)];
     end
     index = index + 1;
 end
+res(671) = y5(671);
+plot(time, res);
