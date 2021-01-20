@@ -25,3 +25,8 @@ for i = 2:(n + 10)
 end
 plot(1:n+10, res, 'o', 1:n, x0);
 
+%相对残差检验
+delta = abs(res(1:n) - x0) / x0;
+%计算相对误差Q
+disp('相对残差Q检验：')
+Q = mean(delta)
