@@ -5,6 +5,6 @@ b = [10; 12];
 aeq = [1 1 1];
 beq = 7;
 lb = zeros(3, 1);
-%få–-fæ„ä¸ºå–åçš„æœ€å°å€¼
+%fÈ¡-fÒâÎªÈ¡·´µÄ×îĞ¡Öµ
 [x, fval] = linprog(-f, a, b, aeq, beq, lb);
 fprintf('x1=%.4f, x2=%.4f, x3=%.4f\nz=%.4f\n', x, -fval);
