@@ -3,3 +3,7 @@
 - [2020年数学建模竞赛实战课程完整版](https://www.bilibili.com/video/BV1Gh411o7sK?p=17)
 
 ### 2、优秀论文
+- [优秀论文](https://github.com/CSN-001/contest/tree/master/nice%20paper(%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87))
+
+### 3、大群通知
+- [2021年美赛竞赛规则、报名和指南中文版-参赛学生必读，注意有重大改变](http://www.madio.net/thread-473019-1-1.html)
