@@ -7,3 +7,6 @@
 
 ### 3、大群通知
 - [2021年美赛竞赛规则、报名和指南中文版-参赛学生必读，注意有重大改变](http://www.madio.net/thread-473019-1-1.html)
+
+### 4、常用工具教程
+- [Matlab中文官方文档](https://ww2.mathworks.cn/help/matlab/index.html)
