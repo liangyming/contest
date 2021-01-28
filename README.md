@@ -10,6 +10,8 @@
 
 ### 4、常用工具教程
 - [Matlab中文官方文档](https://ww2.mathworks.cn/help/matlab/index.html)
+- [在线latex编辑器支持图像识别](https://latexlive.com/)
 
 ### 5、常用数据网站
 - [世界各国常用数据](https://www.indexmundi.com/g/r.aspx?t=0&v=21&l=zh)
+- [地图网站](http://apdrc.soest.hawaii.edu/las/v6/constrain?var=17710)
